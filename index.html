@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- all page CSS loaded once, fragments just use the classes they need -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cause.css">
+    <link rel="stylesheet" href="last.css">
+</head>
+<body>
+    <audio id="bgMusic" src="song.mp3" loop></audio>
+    <button id="muteBtn" style="position:fixed; bottom:20px; right:20px; z-index:999; border:none; background:none; font-size:1.5rem; cursor:pointer;">🔊</button>
+
+    <div id="app"></div>
+
+    <!-- page scripts loaded once, but they don't auto-run — router calls init/destroy -->
+    <script src="script.js"></script>
+    <script src="cause.js"></script>
+    <script src="router.js"></script>
+    <script src="last.js"></script>
+</body>
+</html>
